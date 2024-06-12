@@ -1,0 +1,27 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 231px);
+  grid-template-rows: repeat(2, 275px);
+}
+
+@media (max-width: 1024px) {
+  .services {
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 275px);
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 275px);
+  }
+}
+
+@media (max-width: 360px) {
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 285px);
+  }
+}
